@@ -1,32 +1,108 @@
+/* === TŁO STRONY === */
 body {
-  background-color: #FFF8E1; /* Jasny piaskowy kolor tła */
-  color: #333333; /* Ciemny tekst */
-  font-family: 'Arial', sans-serif; /* Czcionka */
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3 {
-  color: #FF8A00; /* Kolor nagłówków */
+/* === NAGŁÓWEK === */
+.header, .hero, .top-banner {
+  background-color: #111111;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 40px 0;
 }
 
-button {
-  background-color: #FF8A00; /* Kolor tła przycisków */
-  color: white; /* Kolor tekstu w przyciskach */
-  padding: 10px 20px;
+.header h1, .top-banner h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* === NAWIGACJA === */
+nav {
+  background-color: #222222;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #FFFFFF;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  color: #FF8A00;
+}
+
+/* === GŁÓWNE PRZYCISKI === */
+button, .btn {
+  background-color: #FF8A00;
+  color: white;
   border: none;
-  cursor: pointer;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #D76F00; /* Kolor tła przycisków przy najechaniu */
+button:hover, .btn:hover {
+  background-color: #D76F00;
 }
 
+/* === ZAOKRĄGLONE OBRAZY === */
+img.avatar, img.profile, .user-avatar {
+  border-radius: 10px;
+  border: 3px solid #D76F00;
+  max-width: 100px;
+  transition: transform 0.3s ease;
+}
+
+img.avatar:hover {
+  transform: scale(1.05);
+}
+
+/* === STYL RAMKÓW I SEKCJI === */
+.section, .box, .panel {
+  border: 1px solid #444444;
+  background-color: #333333;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === FOOTER === */
+footer, .footer {
+  background-color: #111111;
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 2px solid #FF8A00;
+}
+
+/* === HOVER NA LINKACH === */
 a {
-  color: #0066CC; /* Kolor linków */
-  text-decoration: none; /* Brak podkreślenia */
+  color: #FF8A00;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #D76F00;
 }
 
-a:hover {
-  text-decoration: underline; /* Podkreślenie linku przy najechaniu */
+/* === ANIMACJA POJAWIANIA SIĘ ELEMENTÓW === */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
