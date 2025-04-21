@@ -1,0 +1,32 @@
+body {
+  background-color: #FFF8E1; /* Jasny piaskowy kolor tła */
+  color: #333333; /* Ciemny tekst */
+  font-family: 'Arial', sans-serif; /* Czcionka */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #FF8A00; /* Kolor nagłówków */
+}
+
+button {
+  background-color: #FF8A00; /* Kolor tła przycisków */
+  color: white; /* Kolor tekstu w przyciskach */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #D76F00; /* Kolor tła przycisków przy najechaniu */
+}
+
+a {
+  color: #0066CC; /* Kolor linków */
+  text-decoration: none; /* Brak podkreślenia */
+}
+
+a:hover {
+  text-decoration: underline; /* Podkreślenie linku przy najechaniu */
+}
